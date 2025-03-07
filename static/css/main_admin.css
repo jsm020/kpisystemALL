@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+}
+
+.logo img {
+    max-width: 80px;
+}
+
+.center-text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.account {
+    position: relative;
+    display: inline-block;
+}
+
+.account img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.account-name {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.account:hover .dropdown-content {
+    display: block;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.action-status {
+    cursor: pointer;
+    background-color: #f39c12;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.action-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.action-icons img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Popup */
+.popup {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.popup p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Close Button */
+.close-btn {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    float: right;
+}

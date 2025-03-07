@@ -1,0 +1,8 @@
+# Ignore environment variable files
+.env
+# Ignore __pycache__ directories
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+
+baza.xlsx

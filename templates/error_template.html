@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+    <link rel="stylesheet" href="{% static 'css/error_template.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="modal" id="errorModal">
+            <div class="error-page">
+                <p>{{ error_message }}</p>
+                <!-- This link allows the user to navigate back -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
